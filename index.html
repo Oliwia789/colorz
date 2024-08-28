@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Colorz</title>
     <link rel="stylesheet" href="styles/main.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -49,252 +50,286 @@
             <h1><span class="sectionTag">Soins</span>Nos soins experts anti-âge</h1> 
             <p>Découvrez nos soins, crèmes visage, nettoyants, sérums et coffrets les plus populaires.</p>
         </div>
-        <div class="products__carousel">
-            <div class="products__carousel__card">
-                <div class="products__carousel__img">
-                    <div class="products__carousel__img__content">
-                        <span>Best seller</span>
-                        <div>
-                            <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
-                            <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
-                            <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
-                            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                <mask id="mask0_2032_1148" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="11">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#C4C4C4"/>
-                                </mask>
-                                <g mask="url(#mask0_2032_1148)">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="white"/>
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#DBDCDD"/>
-                                <rect width="6" height="12" fill="#10151C"/>
-                                </g>
-                            </svg>
-                            <svg class="star empty" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
+        <div class="products__carousel__container">
+            <div class="products__carousel">
+                <div class="products__carousel__card">
+                    <div class="products__carousel__img">
+                        <div class="products__carousel__img__content">
+                            <span>Best seller</span>
+                            <div>
+                                <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                                <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                                <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <mask id="mask0_2032_1148" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="11">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#C4C4C4"/>
+                                    </mask>
+                                    <g mask="url(#mask0_2032_1148)">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="white"/>
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#DBDCDD"/>
+                                    <rect width="6" height="12" fill="#10151C"/>
+                                    </g>
+                                </svg>
+                                <svg class="star empty" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                            </div>
                         </div>
+                        <a href="#">
+                            <img class="products__carousel__img__default" src="./assets/products/filorga_01.jpg" alt="Filorga skin-unify"/>
+                            <img class="products__carousel__img__hover" src="./assets/textures/water.jpg" alt="Filorga skin-unify water texture"/>
+                        </a>
+                        <button class="products__carousel__img__shop">
+                            Ajouter au panier
+                        </button>
                     </div>
-                    <a href="#">
-                        <img src="./assets/products/filorga_01.jpg" alt="Filorga skin-unify"/>
-                    </a>
+                    <div class="products__name">
+                        <a href="#"><h3>Skin-unify</h3></a>
+                        <span>72,00€</span>
+                    </div>
                 </div>
-                <div class="products__name">
-                    <a href="#"><h3>Skin-unify</h3></a>
-                    <span>72,00€</span>
-                </div>
-            </div>
-            <div class="products__carousel__card">
-                <div class="products__carousel__img">
-                    <div class="products__carousel__img__content">
-                        <span>Best seller</span>
-                        <div>
-                            <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
-                            <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
-                            <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
-                            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                <mask id="mask0_2032_1148" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="11">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#C4C4C4"/>
-                                </mask>
-                                <g mask="url(#mask0_2032_1148)">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="white"/>
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#DBDCDD"/>
-                                <rect width="6" height="12" fill="#10151C"/>
-                                </g>
-                            </svg>
-                            <svg class="star empty" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
+                <div class="products__carousel__card">
+                    <div class="products__carousel__img">
+                        <div class="products__carousel__img__content">
+                            <span>Best seller</span>
+                            <div>
+                                <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                                <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                                <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <mask id="mask0_2032_1148" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="11">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#C4C4C4"/>
+                                    </mask>
+                                    <g mask="url(#mask0_2032_1148)">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="white"/>
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#DBDCDD"/>
+                                    <rect width="6" height="12" fill="#10151C"/>
+                                    </g>
+                                </svg>
+                                <svg class="star empty" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                            </div>
                         </div>
+                        <a href="#">
+                            <img class="products__carousel__img__default" src="./assets/products/filorga_02.jpg" alt="Filorga Oxygen glow CC cream"/>
+                            <img class="products__carousel__img__hover" src="./assets/textures/cream.jpg" alt="Filorga Oxygen glow CC cream texture"/>
+                        </a>
+                        <button class="products__carousel__img__shop">
+                            Ajouter au panier
+                        </button>
                     </div>
-                    <a href="#">
-                        <img src="./assets/products/filorga_02.jpg" alt="Filorga Oxygen glow CC cream"/>
-                    </a>
+                    <div class="products__name">
+                        <a href="#"><h3>Oxygen glow CC cream</h3></a>
+                        <span>72,00€</span>
+                    </div>
                 </div>
-                <div class="products__name">
-                    <a href="#"><h3>Oxygen glow CC cream</h3></a>
-                    <span>72,00€</span>
-                </div>
-            </div>
-            <div class="products__carousel__card">
-                <div class="products__carousel__img">
-                    <div class="products__carousel__img__content">
-                        <span>Best seller</span>
-                        <div>
-                            <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
-                            <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
-                            <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
-                            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                <mask id="mask0_2032_1148" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="11">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#C4C4C4"/>
-                                </mask>
-                                <g mask="url(#mask0_2032_1148)">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="white"/>
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#DBDCDD"/>
-                                <rect width="6" height="12" fill="#10151C"/>
-                                </g>
-                            </svg>
-                            <svg class="star empty" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
+                <div class="products__carousel__card">
+                    <div class="products__carousel__img">
+                        <div class="products__carousel__img__content">
+                            <span>Best seller</span>
+                            <div>
+                                <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                                <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                                <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <mask id="mask0_2032_1148" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="11">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#C4C4C4"/>
+                                    </mask>
+                                    <g mask="url(#mask0_2032_1148)">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="white"/>
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#DBDCDD"/>
+                                    <rect width="6" height="12" fill="#10151C"/>
+                                    </g>
+                                </svg>
+                                <svg class="star empty" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                            </div>
                         </div>
+                        <a href="#">
+                            <img class="products__carousel__img__default" src="./assets/products/filorga_03.jpg" alt="Filorga global repair advanced elixir"/>
+                            <img class="products__carousel__img__hover" src="./assets/textures/drops.jpg" alt="Filorga global repair advanced elixir texture"/>
+                        </a>
+                        <button class="products__carousel__img__shop">
+                            Ajouter au panier
+                        </button>
                     </div>
-                    <a href="#">
-                        <img src="./assets/products/filorga_03.jpg" alt="Filorga global repair advanced elixir"/>
-                    </a>
+                    <div class="products__name">
+                        <a href="#"><h3>global repair advanced elixir</h3></a>
+                        <span>109,90€</span>
+                    </div>
                 </div>
-                <div class="products__name">
-                    <a href="#"><h3>global repair advanced elixir</h3></a>
-                    <span>109,90€</span>
-                </div>
-            </div>
-            <div class="products__carousel__card">
-                <div class="products__carousel__img">
-                    <div class="products__carousel__img__content">
-                        <span>Best seller</span>
-                        <div>
-                            <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
-                            <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
-                            <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
-                            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                <mask id="mask0_2032_1148" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="11">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#C4C4C4"/>
-                                </mask>
-                                <g mask="url(#mask0_2032_1148)">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="white"/>
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#DBDCDD"/>
-                                <rect width="6" height="12" fill="#10151C"/>
-                                </g>
-                            </svg>
-                            <svg class="star empty" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg> 
+                <div class="products__carousel__card">
+                    <div class="products__carousel__img">
+                        <div class="products__carousel__img__content">
+                            <span>Best seller</span>
+                            <div>
+                                <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                                <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                                <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <mask id="mask0_2032_1148" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="11">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#C4C4C4"/>
+                                    </mask>
+                                    <g mask="url(#mask0_2032_1148)">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="white"/>
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#DBDCDD"/>
+                                    <rect width="6" height="12" fill="#10151C"/>
+                                    </g>
+                                </svg>
+                                <svg class="star empty" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg> 
+                            </div>
                         </div>
+                        <a href="#">
+                            <img class="products__carousel__img__default" src="./assets/products/filorga_04.jpg" alt="Filorga global repair advanced cream"/>
+                            <img class="products__carousel__img__hover" src="./assets/textures/gel.jpg" alt="Filorga global repair advanced cream texture"/>
+                        </a>
+                        <button class="products__carousel__img__shop">
+                            Ajouter au panier
+                        </button>  
                     </div>
-                    <a href="#">
-                        <img src="./assets/products/filorga_04.jpg" alt="Filorga global repair advanced cream"/>
-                    </a>    
+                    <div class="products__name">
+                        <a href="#"><h3>global repair advanced cream</h3></a>    
+                        <span>109,90€</span>
+                    </div>
                 </div>
-                <div class="products__name">
-                    <a href="#"><h3>global repair advanced cream</h3></a>    
-                    <span>109,90€</span>
-                </div>
-            </div>
-            <div class="products__carousel__card">
-                <div class="products__carousel__img">
-                    <div class="products__carousel__img__content">
-                        <span>Best seller</span>
-                        <div>
-                            <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
-                            <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
-                            <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
-                            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                <mask id="mask0_2032_1148" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="11">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#C4C4C4"/>
-                                </mask>
-                                <g mask="url(#mask0_2032_1148)">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="white"/>
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#DBDCDD"/>
-                                <rect width="6" height="12" fill="#10151C"/>
-                                </g>
-                            </svg>
-                            <svg class="star empty" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
+                <div class="products__carousel__card">
+                    <div class="products__carousel__img">
+                        <div class="products__carousel__img__content">
+                            <span>Best seller</span>
+                            <div>
+                                <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                                <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                                <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <mask id="mask0_2032_1148" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="11">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#C4C4C4"/>
+                                    </mask>
+                                    <g mask="url(#mask0_2032_1148)">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="white"/>
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#DBDCDD"/>
+                                    <rect width="6" height="12" fill="#10151C"/>
+                                    </g>
+                                </svg>
+                                <svg class="star empty" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                            </div>
                         </div>
+                        <a href="#">
+                            <img class="products__carousel__img__default" src="./assets/products/filorga_05.jpg" alt="Filorga Hydra-hyal"/>
+                            <img class="products__carousel__img__hover" src="./assets/textures/water.jpg" alt="Filorga Hydra-hyal texture"/>
+                        </a>
+                        <button class="products__carousel__img__shop">
+                            Ajouter au panier
+                        </button>
                     </div>
-                    <a href="#">
-                        <img src="./assets/products/filorga_05.jpg" alt="Filorga Hydra-hyal"/>
-                    </a>
+                    <div class="products__name">
+                        <a href="#"><h3>Hydra-hyal</h3></a>
+                        <span>72,00€</span>
+                    </div>
                 </div>
-                <div class="products__name">
-                    <a href="#"><h3>Hydra-hyal</h3></a>
-                    <span>72,00€</span>
-                </div>
-            </div>
-            <div class="products__carousel__card">
-                <div class="products__carousel__img">
-                    <div class="products__carousel__img__content">
-                        <span>Best seller</span>
-                        <div>
-                            <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
-                            <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
-                            <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
-                            <svg class="star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
-                                <mask id="mask0_2032_1148" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="11">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#C4C4C4"/>
-                                </mask>
-                                <g mask="url(#mask0_2032_1148)">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="white"/>
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#DBDCDD"/>
-                                <rect width="6" height="12" fill="#10151C"/>
-                                </g>
-                            </svg>
-                            <svg class="star empty" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
-                            </svg>
+                <div class="products__carousel__card">
+                    <div class="products__carousel__img">
+                        <div class="products__carousel__img__content">
+                            <span>Best seller</span>
+                            <div>
+                                <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                                <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                                <svg class="star" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                                <svg class="star" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                    <mask id="mask0_2032_1148" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="12" height="11">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#C4C4C4"/>
+                                    </mask>
+                                    <g mask="url(#mask0_2032_1148)">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="white"/>
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="#DBDCDD"/>
+                                    <rect width="6" height="12" fill="#10151C"/>
+                                    </g>
+                                </svg>
+                                <svg class="star empty" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 0L7.76336 3.57295L11.7063 4.1459L8.85317 6.92705L9.52671 10.8541L6 9L2.47329 10.8541L3.14683 6.92705L0.293661 4.1459L4.23664 3.57295L6 0Z" fill="currentColor"/>
+                                </svg>
+                            </div>
                         </div>
+                        <a href="#">
+                            <img class="products__carousel__img__default" src="./assets/products/filorga_06.jpg" alt="Filorga Lift-structure radiance"/>
+                            <img class="products__carousel__img__hover" src="./assets/textures/cleaner.jpg" alt="Filorga Lift-structure radiance texture"/>
+                        </a>
+                        <button class="products__carousel__img__shop">
+                            Ajouter au panier
+                        </button>
                     </div>
-                    <a href="#">
-                        <img src="./assets/products/filorga_06.jpg" alt="Filorga Lift-structure radiance"/>
-                    </a>
-                </div>
-                <div class="products__name">
-                    <a href="#"><h3>Lift-structure radiance</h3></a>
-                    <span>72,00€</span>
+                    <div class="products__name">
+                        <a href="#"><h3>Lift-structure radiance</h3></a>
+                        <span>72,00€</span>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="products__carousel__btn">
             <div>
-                <button><img src="./assets/icons/arrow-left.svg" alt="arrow left"/></button>
-                <button><img src="./assets/icons/arrow-right.svg" alt="arow right"/> </button>
+                <button class="prev">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10 12L6 8L10 4" stroke="black" stroke-miterlimit="10" stroke-linecap="square"/>
+                    </svg>
+                </button>
+                <button class="next">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 4L10 8L6 12" stroke="black" stroke-miterlimit="10" stroke-linecap="square"/>
+                    </svg>
+                </button>
             </div>
             <a href="#"><button>Tous les produits</button></a>
         </div>
     </section>
     <section>
         <hr/>
-        <div>
-            <div>
-                <h2><span>Technologie</span>une technologie de pointe : le NCEF</h2>
+        <div class="technology">
+            <div class="technology__content">
+                <h2><span class="sectionTag">Technologie</span>une technologie de pointe : le NCEF</h2>
                 <p>Spécialiste de soins cosmétiques innovants à l’efficacité anti-âge visible dès 7 jours**, notre laboratoire intègre au cœur de ses formules un complexe anti-âge unique, inspiré des injections de revitalisation cellulaire utilisées par les plus grands médecins esthétiques du monde entier : Le NCEF [New Cellular Encapsulated Factors].</p>
                 <a href="#"><button>Découvrir la gamme NCEF</button></a>
-                <div>
+                <div class="technology__content__picto">
                     <div>
                         <img src="./assets/icons/molecule.svg" alt="molecule icon"/>
                         <span>Infusé à l’acide hyaluronique</span>
@@ -309,10 +344,10 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="technology__img">
                 <img src="./assets/textures/water.jpg" alt="water texture"/>
             </div>
-            <div>
+            <div class="technology__stat">
                 <div>
                     <div>
                         <span>23%</span>
@@ -335,40 +370,59 @@
             </div>
         </div>
     </section>
-    <section>
-        <div>
-            <h2><span>conseils</span>Nos articles de blog</h2>
-            <p>Nos articles de blog sont rédigés par des experts en cosmétique pour vous offrir de précieux conseils pratiques et vous guider avec des contenus fiables, pertinents et accessibles.</p>
-            <a href="#"><button>Tous nos articles</button></a>
+    <hr/>
+    <section class="blog">
+        <div class="blog__title">
+            <div>
+                <h2><span class="sectionTag">conseils</span>Nos articles de blog</h2>
+                <p>Nos articles de blog sont rédigés par des experts en cosmétique pour vous offrir de précieux conseils pratiques et vous guider avec des contenus fiables, pertinents et accessibles.</p>
+                <a href="#"><button>Tous nos articles</button></a>
+            </div>
         </div>
-        <div>
-            <div>
+        <div class="blog__articles"> 
+            <div class="blog__articles__card">
+                <div>
+                    <span class="articleTag">tutos et conseils</span>
+                    <a href="#">
+                        <img src="./assets/articles/article_02.jpg" alt="skin closup"/>
+                    </a>
+                </div>
                 <a href="#">
-                    <span>tutos et conseils</span>
-                    <img src="./assets/articles/article_02.jpg" alt="skin closup"/>
+                    <h3><span>21/07/24</span>Peau mixte, comment en prendre soin ?</h3>
                 </a>
-                <span>21/07/24</span><a href="#"><h3>Peau mixte, comment en prendre soin ?</h3></a>
             </div>
-            <div>
+            <div class="blog__articles__card">
+                <div>
+                    <span class="articleTag">tutos et conseils</span>
+                    <a href="#">
+                        <img src="./assets/articles/article_03.jpg" alt="serum closup"/>
+                    </a>
+                </div>
                 <a href="#">
-                    <span>tutos et conseils</span>
-                    <img src="./assets/articles/article_03.jpg" alt="serum closup"/>
+                    <h3><span>21/07/24</span>Comment Traiter les différents types de cernes sous les yeux</h3>
                 </a>
-                <span>21/07/24</span><a href="#"><h3>Comment Traiter les différents types de cernes sous les yeux</h3></a>
             </div>
-            <div>
+            <div class="blog__articles__card">
+                <div>
+                    <span class="articleTag">ingrédients</span>
+                    <a href="#">
+                        <img src="./assets/articles/article_04.jpg" alt="laboratory products"/>
+                    </a>
+                </div>
                 <a href="#">
-                    <span>ingrédients</span>
-                    <img src="./assets/articles/article_04.jpg" alt="laboratory products"/>
+                    <h3><span>21/07/24</span>Antioxydants pour la peau : quels bienfaits dans la prévention du vieillissement cutané ?</h3>
                 </a>
-                <span>21/07/24</span><a href="#"><h3>Antioxydants pour la peau : quels bienfaits dans la prévention du vieillissement cutané ?</h3></a>
             </div>
-            <div>
+            <div class="blog__articles__card">
+                <div>
+                    <span class="articleTag">expertise</span>
+                    <a href="#">
+                        <img src="./assets/articles/article_05.jpg" alt="molecules closup"/>
+                    </a>
+                </div>
                 <a href="#">
-                    <span>expertise</span>
-                    <img src="./assets/articles/article_05.jpg" alt="molecules closup"/>
+                    <h3><span>21/07/24</span>Nettoyer  son visage : nos conseils pour une peau nette et purifiée en profondeur</h3>
                 </a>
-                <span>21/07/24</span><a href="#"><h3>Nettoyer  son visage : nos conseils pour une peau nette et purifiée en profondeur</h3></a>
             </div>
         </div>
     </section>
