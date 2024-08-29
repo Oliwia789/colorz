@@ -8,7 +8,7 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    <header class="header">
+    <header class="header header__desk">
         <nav class="header__nav">
             <a href="#">LOGO</a>
             <ul>
@@ -25,6 +25,29 @@
             <div><img src="./assets/icons/user.svg" alt="user icon"/> compte</div>
             <div><img src="./assets/icons/bag.svg" alt="bag icon"/> panier (<span>0</span>)</div>
         </div>
+    </header>
+    <header class="header header__mob">
+        <div class="header__mob__icons">
+            <img src="./assets/icons/burger-menu.svg" alt="open menu" class="open-burger-menu"/>
+            <img src="./assets/icons/search.svg" alt="search icon"/>
+        </div>
+        <div class="header__nav">
+            <a href="#">LOGO</a>
+        </div>
+        <div class="header__mob__icons">
+            <img src="./assets/icons/user.svg" alt="user icon"/>
+            <div><img src="./assets/icons/bag.svg" alt="bag icon"/><span>2</span></div>
+        </div>
+        <nav class="header__mob__nav">
+            <ul>
+                <li><a href="#">nos produits</a></li>
+                <li><a href="#">vos besoins</a></li>
+                <li><a href="#">diagnostic</a></li>
+                <li><a href="#">offre & fidélité</a></li>
+                <li><a href="#">nos articles</a></li>
+                <li><a href="#">notre histoire</a></li>
+            </ul>
+        </nav>
     </header>
     <section class="mainArticles">
         <div class="mainArticles__container">
@@ -85,6 +108,9 @@
                             <img class="products__carousel__img__default" src="./assets/products/filorga_01.jpg" alt="Filorga skin-unify"/>
                             <img class="products__carousel__img__hover" src="./assets/textures/water.jpg" alt="Filorga skin-unify water texture"/>
                         </a>
+                        <button class="products__carousel__img__shop__mob">
+                            <img src="./assets/icons/shop.svg" alt="quick shop"/>
+                        </button>
                         <button class="products__carousel__img__shop">
                             Ajouter au panier
                         </button>
@@ -127,6 +153,9 @@
                             <img class="products__carousel__img__default" src="./assets/products/filorga_02.jpg" alt="Filorga Oxygen glow CC cream"/>
                             <img class="products__carousel__img__hover" src="./assets/textures/cream.jpg" alt="Filorga Oxygen glow CC cream texture"/>
                         </a>
+                        <button class="products__carousel__img__shop__mob">
+                            <img src="./assets/icons/shop.svg" alt="quick shop"/>
+                        </button>
                         <button class="products__carousel__img__shop">
                             Ajouter au panier
                         </button>
@@ -169,6 +198,9 @@
                             <img class="products__carousel__img__default" src="./assets/products/filorga_03.jpg" alt="Filorga global repair advanced elixir"/>
                             <img class="products__carousel__img__hover" src="./assets/textures/drops.jpg" alt="Filorga global repair advanced elixir texture"/>
                         </a>
+                        <button class="products__carousel__img__shop__mob">
+                            <img src="./assets/icons/shop.svg" alt="quick shop"/>
+                        </button>
                         <button class="products__carousel__img__shop">
                             Ajouter au panier
                         </button>
@@ -211,6 +243,9 @@
                             <img class="products__carousel__img__default" src="./assets/products/filorga_04.jpg" alt="Filorga global repair advanced cream"/>
                             <img class="products__carousel__img__hover" src="./assets/textures/gel.jpg" alt="Filorga global repair advanced cream texture"/>
                         </a>
+                        <button class="products__carousel__img__shop__mob">
+                            <img src="./assets/icons/shop.svg" alt="quick shop"/>
+                        </button>
                         <button class="products__carousel__img__shop">
                             Ajouter au panier
                         </button>  
@@ -253,6 +288,9 @@
                             <img class="products__carousel__img__default" src="./assets/products/filorga_05.jpg" alt="Filorga Hydra-hyal"/>
                             <img class="products__carousel__img__hover" src="./assets/textures/water.jpg" alt="Filorga Hydra-hyal texture"/>
                         </a>
+                        <button class="products__carousel__img__shop__mob">
+                            <img src="./assets/icons/shop.svg" alt="quick shop"/>
+                        </button>
                         <button class="products__carousel__img__shop">
                             Ajouter au panier
                         </button>
@@ -295,6 +333,9 @@
                             <img class="products__carousel__img__default" src="./assets/products/filorga_06.jpg" alt="Filorga Lift-structure radiance"/>
                             <img class="products__carousel__img__hover" src="./assets/textures/cleaner.jpg" alt="Filorga Lift-structure radiance texture"/>
                         </a>
+                        <button class="products__carousel__img__shop__mob">
+                            <img src="./assets/icons/shop.svg" alt="quick shop"/>
+                        </button>
                         <button class="products__carousel__img__shop">
                             Ajouter au panier
                         </button>
@@ -370,60 +411,65 @@
             </div>
         </div>
     </section>
-    <hr/>
-    <section class="blog">
-        <div class="blog__title">
-            <div>
-                <h2><span class="sectionTag">conseils</span>Nos articles de blog</h2>
-                <p>Nos articles de blog sont rédigés par des experts en cosmétique pour vous offrir de précieux conseils pratiques et vous guider avec des contenus fiables, pertinents et accessibles.</p>
-                <a href="#"><button>Tous nos articles</button></a>
-            </div>
-        </div>
-        <div class="blog__articles"> 
-            <div class="blog__articles__card">
+    <section>
+        <hr/>
+        <div class="blog">
+            <div class="blog__title">
                 <div>
-                    <span class="articleTag">tutos et conseils</span>
+                    <h2><span class="sectionTag">conseils</span>Nos articles de blog</h2>
+                    <p>Nos articles de blog sont rédigés par des experts en cosmétique pour vous offrir de précieux conseils pratiques et vous guider avec des contenus fiables, pertinents et accessibles.</p>
+                    <a href="#"><button>Tous nos articles</button></a>
+                </div>
+            </div>
+            <div class="blog__articles__container">
+            <div class="blog__articles"> 
+                <div class="blog__articles__card">
+                    <div>
+                        <span class="articleTag">tutos et conseils</span>
+                        <a href="#">
+                            <img src="./assets/articles/article_02.jpg" alt="skin closup"/>
+                        </a>
+                    </div>
                     <a href="#">
-                        <img src="./assets/articles/article_02.jpg" alt="skin closup"/>
+                        <h3><span>21/07/24</span>Peau mixte, comment en prendre soin ?</h3>
                     </a>
                 </div>
-                <a href="#">
-                    <h3><span>21/07/24</span>Peau mixte, comment en prendre soin ?</h3>
-                </a>
-            </div>
-            <div class="blog__articles__card">
-                <div>
-                    <span class="articleTag">tutos et conseils</span>
+                <div class="blog__articles__card">
+                    <div>
+                        <span class="articleTag">tutos et conseils</span>
+                        <a href="#">
+                            <img src="./assets/articles/article_03.jpg" alt="serum closup"/>
+                        </a>
+                    </div>
                     <a href="#">
-                        <img src="./assets/articles/article_03.jpg" alt="serum closup"/>
+                        <h3><span>21/07/24</span>Comment Traiter les différents types de cernes sous les yeux</h3>
                     </a>
                 </div>
-                <a href="#">
-                    <h3><span>21/07/24</span>Comment Traiter les différents types de cernes sous les yeux</h3>
-                </a>
-            </div>
-            <div class="blog__articles__card">
-                <div>
-                    <span class="articleTag">ingrédients</span>
+                <div class="blog__articles__card">
+                    <div>
+                        <span class="articleTag">ingrédients</span>
+                        <a href="#">
+                            <img src="./assets/articles/article_04.jpg" alt="laboratory products"/>
+                        </a>
+                    </div>
                     <a href="#">
-                        <img src="./assets/articles/article_04.jpg" alt="laboratory products"/>
+                        <h3><span>21/07/24</span>Antioxydants pour la peau : quels bienfaits dans la prévention du vieillissement cutané ?</h3>
                     </a>
                 </div>
-                <a href="#">
-                    <h3><span>21/07/24</span>Antioxydants pour la peau : quels bienfaits dans la prévention du vieillissement cutané ?</h3>
-                </a>
-            </div>
-            <div class="blog__articles__card">
-                <div>
-                    <span class="articleTag">expertise</span>
+                <div class="blog__articles__card">
+                    <div>
+                        <span class="articleTag">expertise</span>
+                        <a href="#">
+                            <img src="./assets/articles/article_05.jpg" alt="molecules closup"/>
+                        </a>
+                    </div>
                     <a href="#">
-                        <img src="./assets/articles/article_05.jpg" alt="molecules closup"/>
+                        <h3><span>21/07/24</span>Nettoyer  son visage : nos conseils pour une peau nette et purifiée en profondeur</h3>
                     </a>
                 </div>
-                <a href="#">
-                    <h3><span>21/07/24</span>Nettoyer  son visage : nos conseils pour une peau nette et purifiée en profondeur</h3>
-                </a>
             </div>
+            </div>
+            <a href="#"><button>Tous nos articles</button></a>
         </div>
     </section>
 </body>
