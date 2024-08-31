@@ -8,11 +8,12 @@ Vous pouvez accéder à l'application déployée en ligne à l'adresse suivante 
 
 ```
 git clone https://github.com/Oliwia789/colorz.git
-cd test_colorz
+
+# Pour la compilation scss vers css
 npm install
 # ou
 yarn install
-npm start
+npm run build-css 
 ```
 
 ## Auteur
