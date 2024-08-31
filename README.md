@@ -1,4 +1,4 @@
-# Weather APP
+# Colorz
 
 Ce projet constitue la page principale d'une marque de soins visage, intégrant une présentation des produits, des informations, et des articles de blog. La page est entièrement responsive.
 
