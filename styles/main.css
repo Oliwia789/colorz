@@ -517,12 +517,12 @@ hr {
 .products__carousel__btn div .products__carousel__btn__disabled:hover svg path {
   stroke: #10151C;
 }
-.products__carousel__btn a {
+.products__carousel__btn > button {
   position: absolute;
   right: 0;
 }
 @media (max-width: 768px) {
-  .products__carousel__btn a {
+  .products__carousel__btn > button {
     position: relative;
   }
 }
@@ -679,7 +679,7 @@ hr {
   font-weight: 500;
 }
 @media (max-width: 1200px) {
-  .blog__title > div a {
+  .blog__title > div button {
     display: none;
   }
 }
@@ -742,11 +742,11 @@ hr {
   line-height: 12px;
   margin-right: 40px;
 }
-.blog > a {
+.blog__mobBtn {
   display: none;
 }
 @media (max-width: 1200px) {
-  .blog > a {
+  .blog__mobBtn {
     display: flex;
     justify-content: center;
   }
